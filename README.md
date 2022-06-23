@@ -1,4 +1,4 @@
-# Cross platform asynchronous network watcher
+# Cross platform asynchronous network watcher 
 
 ```sh
 cargo run --example if_watch
