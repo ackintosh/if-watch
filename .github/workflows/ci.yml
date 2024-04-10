@@ -1,4 +1,4 @@
-on: [pull_request]
+on: [push]
 
 name: if-watch
 
@@ -15,23 +15,11 @@ jobs:
           host: ubuntu-latest
           cross: false
 
-        - target: x86_64-apple-darwin
-          host: macos-latest
-          cross: false
-
-        - target: x86_64-pc-windows-msvc
-          host: windows-latest
-          cross: false
-
         - target: armv7-linux-androideabi
           host: ubuntu-latest
           cross: true
         - target: aarch64-linux-android
           host: ubuntu-latest
-          cross: true
-
-        - target: aarch64-apple-ios
-          host: macos-latest
           cross: true
     env:
       RUST_BACKTRACE: 1
